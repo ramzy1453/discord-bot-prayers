@@ -73,6 +73,8 @@ export async function setupPrayersSchedule(client: Client<boolean>) {
   updateJob.start();
 
   await schedulePrayers();
+
+  console.log("Setup cron jobs for prayers...")
 }
 
 const prayersConfig: Record<string, { message: string; color: string }> = {
